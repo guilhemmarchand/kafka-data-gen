@@ -191,10 +191,12 @@ class EPSThread implements Runnable {
         //same header values
         if(Integer.parseInt(params.headerGenProfile) == 0) {
             record.headers()
-                    .add("header_index", "header_index".getBytes())
-                    .add("header_host", "header_host".getBytes())
-                    .add("header_source", "header_source".getBytes())
-                    .add("header_sourcetype", "splunk:kafka:headers".getBytes());
+                    .add("header_index", "kafka_demo_acme".getBytes())
+                    .add("header_host", "kafka.west".getBytes())
+                    .add("header_source", "kafka:west:amer".getBytes())
+                    .add("header_sourcetype", "kafka:gen".getBytes())
+                    .add("company", "acme".getBytes())
+                    .add("region", "emea".getBytes());
         }
 
         // completely random headers

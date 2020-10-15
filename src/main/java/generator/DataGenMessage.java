@@ -36,6 +36,6 @@ public class DataGenMessage {
     }
 
     public String toJSON() {
-        return "{"+ "\"timestamp\":\"" + this.timestamp + "\", \"region\": \"EMEA\", \"company\":\"acme\", " + "\"eventKey\":\"" + this.sequenceNumber + "\", \"uuid\":\"" + this.uuid +"\", \"message\":\"" + this.message + "\"}";
+        return "{"+ "\"timestamp\":\"" + this.timestamp + "\", \"region\": \"emea\", \"company\":\"acme\", " + "\"eventKey\":\"" + this.sequenceNumber + "\", \"uuid\":\"" + this.uuid +"\", \"message\":\"" + this.message + "\"}";
     }
 }
