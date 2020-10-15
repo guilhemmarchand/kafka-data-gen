@@ -1,5 +1,6 @@
 ### Gradle Folders ###
 .gradle
+/build/
 
 ### IDE's ###
 .idea
